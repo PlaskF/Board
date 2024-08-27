@@ -1,6 +1,7 @@
 package kr.ac.kopo.board.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.*;
 
 @Entity
@@ -10,5 +11,9 @@ import lombok.*;
 @Getter
 @ToString
 public class Member extends BaseEntity{
+    @Id
+    private String email;
 
+    private String password;
+    private String name;
 }
