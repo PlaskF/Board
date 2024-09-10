@@ -2,7 +2,6 @@ package kr.ac.kopo.board.repository;
 
 
 import kr.ac.kopo.board.entity.Board;
-import kr.ac.kopo.board.entity.Member;
 import kr.ac.kopo.board.entity.Reply;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

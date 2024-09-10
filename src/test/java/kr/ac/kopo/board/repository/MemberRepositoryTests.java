@@ -20,7 +20,7 @@ public class MemberRepositoryTests {
                 Member member = Member.builder()
                         .email("user" + i + "@kopo.kr")
                         .password("1234")
-                        .name("user + i")
+                        .name("user" + i)
                         .build();
                 memberRepository.save(member);
         });
