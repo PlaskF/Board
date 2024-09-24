@@ -18,7 +18,7 @@ public class ReplyRepositoryTests {
     @Test
     public void insertReply() {
         IntStream.rangeClosed(1, 300).forEach(i -> {
-            long bno = (long)Math.random() * 100 + 1; // 1~100 임의의 long 형의 정수 값
+            long bno = (long)(Math.random() * 100) + 1; // 1~100 임의의 long 형의 정수 값
 
             Board board = Board.builder()
                     .bno(bno)
