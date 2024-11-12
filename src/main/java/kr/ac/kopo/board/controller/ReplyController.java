@@ -29,8 +29,10 @@ public class ReplyController {
     }
 
     @DeleteMapping("/{rno}")
-    public ResponseEntity<String> remove(@PathVariable("rno") Long rno) {
+    public ResponseEntity<String> remove(@PathVariable("rno")  Long rno){
+
         replyService.remove(rno);
+
         return new ResponseEntity<>("success", HttpStatus.OK);
     }
 
